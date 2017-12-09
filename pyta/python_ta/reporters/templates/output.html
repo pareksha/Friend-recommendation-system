@@ -1,0 +1,108 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+
+		<div id="preheader">
+			<div id="module">
+				Module analysed: 
+			</div>
+			<span id="date">
+				Generated: Mon. May. 22 2017, 13:02:32
+			</span>
+		</div>
+
+	<div id="header">
+		<div class="title">
+			PyTA Error Report
+		</div>
+	</div>
+
+	<br/>
+
+	<div id="inside">
+		<div id="core">
+
+			<div id="code">
+				=== Code errors/forbidden usage (fix these right away!) ===
+			</div>
+			<u1>
+				
+			</u1>
+
+			<div id="style">
+			=== Style/convention errors (fix these before submission) ===
+			</div>
+
+			<u1>
+				
+					<p/>
+					<p style="font-size: 110%">
+						<span class="style_id">
+						<a href="http://www.cs.toronto.edu/~david/pyta/&#35;C0111" target="_blank">C0111 (missing-docstring)</a> </span>
+						&nbsp;&nbsp;Number of occurrences: 3
+					</p>
+					
+						<div style="font-weight:bold">
+						&nbsp;&nbsp;[Line 1] Missing module docstring <p/>
+						
+							<p class="snippet">
+								&nbsp;&nbsp;<span class="black">&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;<span class="highlight">"""YOUR&nbsp;DOCSTRING&nbsp;HERE"""</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class="grey">1</span>&nbsp;&nbsp;<span class="grey">class&nbsp;Assigning():</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class="grey">2</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="grey">def&nbsp;__init__(self,&nbsp;value,&nbsp;name):</span><br/>
+							</p>
+						
+						</div>
+					
+						<div style="font-weight:bold">
+						&nbsp;&nbsp;[Line 1] Missing class docstring <p/>
+						
+							<p class="snippet">
+								&nbsp;&nbsp;&nbsp;&nbsp;<span class="grey">1</span>&nbsp;&nbsp;<span class="grey">class&nbsp;Assigning():</span><br/>&nbsp;&nbsp;<span class="black">&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="highlight">"""YOUR&nbsp;DOCSTRING&nbsp;HERE"""</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class="grey">2</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="grey">def&nbsp;__init__(self,&nbsp;value,&nbsp;name):</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class="grey">3</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="grey">self.value&nbsp;=&nbsp;value</span><br/>
+							</p>
+						
+						</div>
+					
+						<div style="font-weight:bold">
+						&nbsp;&nbsp;[Line 6] Missing method docstring <p/>
+						
+							<p class="snippet">
+								&nbsp;&nbsp;&nbsp;&nbsp;<span class="grey">6</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="grey">def&nbsp;new_attr(self,&nbsp;newvalue,&nbsp;newname):</span><br/>&nbsp;&nbsp;<span class="black">&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="highlight">"""YOUR&nbsp;DOCSTRING&nbsp;HERE"""</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class="grey">7</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="grey">#&nbsp;wrong&nbsp;approach</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class="grey">8</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="grey">self&nbsp;=&nbsp;newvalue&nbsp;&nbsp;#&nbsp;Error&nbsp;on&nbsp;this&nbsp;line</span><br/>
+							</p>
+						
+						</div>
+					
+				
+					<p/>
+					<p style="font-size: 110%">
+						<span class="style_id">
+						<a href="http://www.cs.toronto.edu/~david/pyta/&#35;E9990" target="_blank">E9990 (assigning-to-self)</a> </span>
+						&nbsp;&nbsp;Number of occurrences: 1
+					</p>
+					
+						<div style="font-weight:bold">
+						&nbsp;&nbsp;[Line 8] Assigning value to self on line 8 <p/>
+						
+							<p class="snippet">
+								&nbsp;&nbsp;&nbsp;&nbsp;<span class="grey">6</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="grey">def&nbsp;new_attr(self,&nbsp;newvalue,&nbsp;newname):</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class="grey">7</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="grey">#&nbsp;wrong&nbsp;approach</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class="gbold">8</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="black"></span><span class="highlight">self&nbsp;=&nbsp;newvalue</span>&nbsp;&nbsp;<span class="black">#&nbsp;Error&nbsp;on&nbsp;this&nbsp;line</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class="grey">9</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="grey">#&nbsp;correct&nbsp;approach</span><br/>
+							</p>
+						
+						</div>
+					
+				
+			</u1>
+
+		</div>
+		<a href="mailto:david@cs.toronto.edu">
+			<div id="report_bug">
+				Found a bug? Report it to Prof. Liu!
+			</div>
+		</a>
+	</div>
+</body>
+<div id="logo">
+		<a href="http://www.cs.toronto.edu/~david/pyta/" target="_blank">
+			<img src="pyta_logo_markdown.png" alt="PyTA logo" height="50"/>
+		</a>
+	</p>
+</div>
+</html>
