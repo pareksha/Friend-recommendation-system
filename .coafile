@@ -22,7 +22,3 @@ max_line_length = 85
 [SpaceCheck]
 bears = SpaceConsistencyBear
 use_spaces = True
-
-[DuplicateCodeCheck]
-bears = CPDBear
-language = Python
