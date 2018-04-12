@@ -1,0 +1,28 @@
+[Default]
+files = *.py
+ignore = checker.py
+
+[LineLength]
+bears = LineLengthBear
+max_line_length = 85
+
+[CheckQuotation]
+bears = QuotesBear
+language = Python
+preferred_quotation = '
+
+[UnusedCode]
+bears = PyUnusedCodeBear
+remove_all_unused_imports = true
+
+[pep8]
+bears = PEP8Bear, PycodestyleBear
+max_line_length = 85
+
+[SpaceCheck]
+bears = SpaceConsistencyBear
+use_spaces = True
+
+[DuplicateCodeCheck]
+bears = CPDBear
+language = Python

@@ -1,4 +1,4 @@
-""" CSC108 Assignment 3: Social Networks - Starter code """
+""" CSC108 Assignment 3: Social Networks - Starter code """  # Ignore QuotesBear
 from typing import List, Tuple, Dict, TextIO
 
 
@@ -81,8 +81,8 @@ def get_average_friend_count(person_to_friends: Dict[str, List[str]]) -> float:
         return 0
     else:
         return sum(num_friend_list) / len(num_friend_list)
-    
-    
+
+
 def get_families(person_to_friends: Dict[str, List[str]]) -> Dict[str, List[str]]:
     """Return a "last name to first name(s)" dictionary based on the given
     "person to friends" dictionary.
@@ -96,10 +96,10 @@ def get_families(person_to_friends: Dict[str, List[str]]) -> Dict[str, List[str]
         for names in person_to_friends[key]:
             list_of_people.append(names)
     list_of_people = format_list(list_of_people)
-    dict_fam_mem = {} # Required Dictionary
+    dict_fam_mem = {}  # Required Dictionary
     for name in list_of_people:
         last_name = name.split(' ')[-1]
-        list_fam_mem = [] # List containing the first name of family members
+        list_fam_mem = []  # List containing the first name of family members
         for member in list_of_people:
             if member.split(' ')[-1] == last_name:
                 first_name_list = member.split(' ')[:-1]
@@ -140,7 +140,7 @@ def get_friends_of_friends(person_to_friends: Dict[str, List[str]],
     ['Jay Pritchett','Mitchell Pritchett', 'Phil Dunphy']} returns
     ['Mitchell Pritchett', 'Phil Dunphy']
     """
-    list_far_frnds = [] # list of friends of friends
+    list_far_frnds = []  # list of friends of friends
     for friend in person_to_friends[person]:
         if friend in person_to_friends:
             for friend_of_friend in person_to_friends[friend]:
@@ -275,14 +275,14 @@ def make_recommendations(person: str,
     """
     potential_friend_dict = {}
     # mutual friends recommendations
-    potential_friend_dict = mutual_friend_recommendations\
-        (person, person_to_friends, potential_friend_dict)
+    potential_friend_dict = mutual_friend_recommendations(
+        person, person_to_friends, potential_friend_dict)
     # network recommendations
-    potential_friend_dict = network_recommendations\
-        (person, person_to_networks, potential_friend_dict)
+    potential_friend_dict = network_recommendations(
+        person, person_to_networks, potential_friend_dict)
     # last name recommendations
-    potential_friend_dict = family_recommendations \
-        (person, person_to_friends, potential_friend_dict)
+    potential_friend_dict = family_recommendations(
+        person, person_to_friends, potential_friend_dict)
 
     potential_friend_dict_sorted = sort_dict(potential_friend_dict)
 
