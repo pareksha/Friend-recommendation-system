@@ -1,0 +1,11 @@
+sudo: false
+language: python
+python:
+  - 3.6
+
+script:
+  - pip install coala-bears[alldeps] --pre -U
+  - coala
+
+notifications:
+  email: false
